@@ -1,0 +1,22 @@
+###
+GET http://localhost/belajarAPI
+
+###
+POST localhost/belajarAPI/index.php/addcatatan
+Content-Type: text/html
+{
+    "judul":"testlagi",
+    "catatan":"belajar api2"
+}
+
+###
+POST localhost/belajarAPI/index.php/addcatatan
+content-type: application/json
+
+{
+    "judul":"testlagi",
+    "catatan":"belajar api2"
+}
+
+###
+GET localhost/belajarAPI/index.php/listcatatan/1
