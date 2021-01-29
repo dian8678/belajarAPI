@@ -3,7 +3,7 @@ GET http://localhost/belajarAPI
 
 ###
 POST localhost/belajarAPI/index.php/addcatatan
-Content-Type: text/html
+content-type: text/html
 {
     "judul":"testlagi",
     "catatan":"belajar api2"
@@ -18,5 +18,26 @@ content-type: application/json
     "catatan":"belajar api2"
 }
 
+
 ###
-GET localhost/belajarAPI/index.php/listcatatan/1
+GET  localhost/belajarAPI/index.php/listcatatan
+content-type: application/json
+
+###
+POST localhost/belajarAPI/index.php/editcatatan/1
+content-type: application/json
+
+{
+    "judul":"sempak",
+    "catatan":"sudah di edit "
+}
+
+
+###
+POST localhost/belajarAPI/index.php/deletecatatan/1
+
+###
+POST   localhost/belajarAPI/index.php/restorecatatan/1
+
+###
+GET  localhost/belajarAPI/index.php/logcatatan
